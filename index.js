@@ -22,7 +22,13 @@ for(let i = 0; i < str2.length; i++){
     console.log(str2[i])
 }
 num3 = [1,2,3,4,5,6,7,8,9,10]
-console.log(Math.max(...num3))
+let maxvalue = 0
+for(let i = 0; i < num3.length; i++){
+    if(maxvalue < num3[i]){
+        maxvalue = num3[i]
+    }
+}
+console.log(maxvalue)
 let num4 = num3
 num4 = num4.filter(function (item){
     return item%2 === 0
